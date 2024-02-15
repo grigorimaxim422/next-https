@@ -1,0 +1,36 @@
+POST http://localhost:3000/api/articulos HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Teclado", 
+    "descripcion": "Teclado USB normal",
+    "precio": 20.01
+}
+
+### 
+
+GET http://localhost:3000/api/articulos HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:3000/api/articulos/1 HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://localhost:3000/api/articulos/1 HTTP/1.1
+content-type: application/json
+
+{ 
+    "nombre": "Artículo renovado", 
+    "descripcion": "Nuevo modelo",
+    "precio": 42
+}
+
+###
+
+DELETE http://localhost:3000/api/articulos/1 HTTP/1.1
+content-type: application/json
+
+
