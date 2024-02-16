@@ -13,7 +13,7 @@ export async function GET(req) {
         //     return acc;
         // }, {});
         results = await db.query('SELECT unreads.uid as uid, count(unreads.id) as unread from unreads where userid=? group by unreads.uid;', [userid]);
-        console.log('db unreads query results:', results);
+        // console.log('db unreads query results:', results);
         const unreads = results.reduce((acc, user) => {
             const { uid, unread } = user;
             acc[uid] = unread;
