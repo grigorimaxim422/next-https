@@ -1,0 +1,12 @@
+    
+  .overlap-container{
+    width:30vw;
+    height:80vh;
+    border:1px solid #ccc;        
+    z-index: 2;
+  }
+ 
+  .main-content {        
+    height:80vh;
+    overflow-y: auto;
+  }
